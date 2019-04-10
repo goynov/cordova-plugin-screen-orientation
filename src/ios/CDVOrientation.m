@@ -73,9 +73,9 @@
                 }
             } else {
                 if (_lastOrientation != UIInterfaceOrientationUnknown) {
-                    [[UIDevice currentDevice] setValue:[NSNumber numberWithInt:_lastOrientation] forKey:@"orientation"];
+                    //[[UIDevice currentDevice] setValue:[NSNumber numberWithInt:_lastOrientation] forKey:@"orientation"];
                     ((void (*)(CDVViewController*, SEL, NSMutableArray*))objc_msgSend)(vc,selector,result);
-                    [UINavigationController attemptRotationToDeviceOrientation];
+                    //[UINavigationController attemptRotationToDeviceOrientation];
                 }
             }
             if (value != nil) {
